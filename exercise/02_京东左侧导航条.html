@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东的左侧导航</title>
+    <style>
+        body{
+            background-color: #bfa;
+        }
+        .left-list{
+            width:190px;
+            height:225px;
+            /* 设置padding */
+            padding:10px 0px;
+            background-color: aliceblue;
+            margin: 50px auto;
+        }
+
+         /* 
+          :link 用来表示没访问过的链接
+        */
+       
+        /* 
+          :visited 用来表示访问过的链接
+          由于隐私的原因，所以visited这个伪类只能修改链接的颜色
+        */
+        .item a:visited{
+            color:rgb(117, 12, 245);
+        }
+
+        /*  ：hover用来表示鼠标移入的状态 */
+        .item a:hover{
+            background-color:gainsboro;
+            color: red;
+        }
+        /*  :avtive用来表示鼠标点击0/
+        .item a:active{
+            color:greenyellow;
+        }
+
+        /* 设置菜单内部的item */
+        .left-list .item{
+            font-size: 12px;
+            height: 25px; 
+            line-height: 25px;
+            padding-left: 18px;
+        }
+         .item a{
+            /* 设置字体大小 */
+            font-size: 14px;
+            color:black;
+            /* 去除下划线 */
+            text-decoration: none;
+            margin-right: 3px;
+        }
+        /* 要让一个文字在父元素中垂直高度，只需将父元素的line-height设置为
+           一个和父元素的height一样的值 */
+
+    </style>
+</head>
+<body>
+    <!-- nav表示导航条 -->
+    <nav class="left-list">
+        <div class="item">
+            <a href="#">家用电器</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/
+            <a href="#">运营商</a>/
+            <a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">电脑</a>/
+            <a href="#">办公</a>/
+        </div>
+        <div class="item">
+            <a href="#">家具</a>/
+            <a href="#">家居</a>/
+            <a href="#">家装</a>/
+            <a href="#">厨具</a>
+        </div>
+        <div class="item">
+            <a href="#">男装</a>/
+            <a href="#">女装</a>/
+            <a href="#">童装</a>/
+            <a href="#">内衣</a>
+        </div>
+        <div class="item">
+            <a href="#">美装</a>/
+            <a href="#">个性清洁</a>/
+            <a href="#">宠物</a>
+        </div>
+    </nav>
+</body>
+</html>

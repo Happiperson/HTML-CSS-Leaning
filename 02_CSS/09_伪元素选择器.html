@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size:50px;
+        }
+        p::first-line{
+            background-color: grey;
+        }
+        p:hover{
+            font-size: 21px;
+        }
+        p::selection{
+            background-color: yellow;
+        }
+        div::before{
+            content:'哈哈哈';
+        }
+        div::after{
+            content:'啦啦啦';
+        }
+
+
+/* 
+    伪元素：表示页面中一些特殊的并不真实的存在的元素（特殊的位置）
+        伪元素使用 ：：开头
+
+        ::first-letter 表示第一个字母
+
+        ::first-line 表示第一行
+
+        ::selection  表示选中的内容
+
+        ::before 元素的开始（的缝儿）
+        ::after 元素的最后（的缝儿）
+            before和after必须结合content属性来使用
+*/
+
+    </style>
+</head>
+<body>
+    <q>hello</q>   <!-- 自带before和after加了引号 -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad a dolorum optio incidunt quos sequi suscipit exercitationem consequatur, unde voluptas adipisci quidem alias, architecto sint ipsa nulla! Omnis, placeat esse.
+    </p>
+    <div>words:</div>
+</body>
+</html>

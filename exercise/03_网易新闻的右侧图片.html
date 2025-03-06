@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <style>
+        /* 设置容器的样式 */
+        .news-wrapper{
+            width: 300px;
+            height: 358px;
+            margin: 50px auto;
+            background-color: #fff;
+            /* 设置上边框 */
+            border-top:1px solid #ddd;
+        }
+        .news-title{
+            /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+            display:inline-block;
+            height:40px;
+            border-top:1px red solid;
+            margin-top: -1px;
+        }
+        /* 设置 */
+      
+        
+    </style>
+</head>
+<body>
+
+    <!-- 创建新闻列表的外侧的容器 -->
+    <div class="news-list">
+        <!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news img">
+            <a href="#">
+                <img src="./img/体育.jpg " alt="足协">
+ 
+            <!-- 创建图片标题 -->
+            <h2>
+                费德勒首负迪米 敷额头布满发挥
+            </h2>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="#">乔治啦啦啦</a>
+            </li>
+            <li>
+                <a href="#">格林啦啦啦啦</a>
+            </li>
+            <li>
+                <a href="#">WIU哦还懂啊活动AUO</a>
+            </li>
+            <li>
+                <a href="#">aeadaeaddda</a>
+            </li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

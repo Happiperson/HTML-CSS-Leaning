@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* [属性名]选择含有指定属性的元素
+           [属性名=属性值]选择含有指定属性和属性值的元素
+           [属性名^=属性值]选择属性值以指定值开头的元素
+           [属性名$=属性值]选择属性值以指定值结尾的元素
+           [属性名*=属性值]选择属性值中含有某值的元素的元素
+        */
+      p[title]{
+        font-size: 40px;
+      }
+      p[title=abc]{
+        color:red;
+      }
+      p[title^=efg]{
+        color:yellow;
+      }
+      p[title$=yz]{
+        color:green;
+      }
+      p[title*=lmn]{
+        color:blue;
+      }
+    </style>
+</head>
+<body>
+    <p title="abc">长太息以掩涕兮</p>
+    <p class="teshu">哀民生之多艰</p>
+    <p title="efgh">既替余以蕙纕兮</p>
+    <p title="xyz">又申之以揽茝</p>
+    <p title="plmno">虽九死其犹未悔</p>
+</body>
+</html>

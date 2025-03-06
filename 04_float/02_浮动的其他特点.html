@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: red;
+            float:left;
+            /* 
+                浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围，
+                    所以我们可以利用浮动来设置文字环绕的效果
+            */
+        }
+
+        /* 
+            脱离文档流的特点：
+                块元素：
+                    1、块元素不再独占页面的一行
+                    2、脱离文档流以后，块元素的宽度和高度默认都被内容撑开
+                行内元素：
+                    行内元素脱离文档流以后会变成块元素，特点和块元素一样
+                脱离文档流以后，不需要再区分块和行内了
+        */
+        .box2{
+            background-color:blue;
+            float:left;
+        }
+        .box3{
+            
+            background-color:yellow;
+            float: left;
+
+        }
+
+         
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p> I would like to introduce my favorite dish from my hometown, which is Sichuan chicken rice. To make Sichuan chicken rice, you need to first sauté the chicken in some butter or oil until it becomes slightly golden brown. Then, add the rice and stir-fry for a few minutes until the rice is cooked. Finally, add the seasonings and a splash of water to heat it up.
+        I would like to introduce my favorite dish from my hometown, which is Sichuan chicken rice. To make Sichuan chicken rice, you need to first sauté the chicken in some butter or oil until it becomes slightly golden brown. Then, add the rice and stir-fry for a few minutes until the rice is cooked. Finally, add the seasonings and a splash of water to heat it up.
+        I would like to introduce my favorite dish from my hometown, which is Sichuan chicken rice. To make Sichuan chicken rice, you need to first sauté the chicken in some butter or oil until it becomes slightly golden brown. Then, add the rice and stir-fry for a few minutes until the rice is cooked. Finally, add the seasonings and a splash of water to heat it up.
+        I would like to introduce my favorite dish from my hometown, which is Sichuan chicken rice. To make Sichuan chicken rice, you need to first sauté the chicken in some butter or oil until it becomes slightly golden brown. Then, add the rice and stir-fry for a few minutes until the rice is cooked. Finally, add the seasonings and a splash of water to heat it up.
+        I would like to introduce my favorite dish from my hometown, which is Sichuan chicken rice. To make Sichuan chicken rice, you need to first sauté the chicken in some butter or oil until it becomes slightly golden brown. Then, add the rice and stir-fry for a few minutes until the rice is cooked. Finally, add the seasonings and a splash of water to heat it up.
+    </p>
+    <br><br>
+
+    <div class="box2">哈哈哈哈哈哈哈哈</div>
+    <span class="box3">哒哒哒哒哒哒哒哒</span>
+
+</body>
+</html>
